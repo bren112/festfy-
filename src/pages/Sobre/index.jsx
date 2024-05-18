@@ -3,7 +3,8 @@ import firebase from "firebase/app";
 import { auth } from "./firebase";
 import './btn.css';
 import './login.css';
-import fundo from './images/fundo.png' 
+import fundo from './images/fundo.png' ;
+import { Link } from "react-router-dom"; 
 
 export default function Sobre() {
   const handleLogin = async () => {
@@ -50,6 +51,12 @@ export default function Sobre() {
         </p>
         <div className='div-btn'>
       <button onClick={handleLogin} className='login-with-google-btn'>Login Google</button>
+          
+              <div className='div-btn'>
+          <Link to="/teste" id='link'>
+           TESTE MOBILE
+          </Link>
+        </div>
       </div>
         </div>
 
